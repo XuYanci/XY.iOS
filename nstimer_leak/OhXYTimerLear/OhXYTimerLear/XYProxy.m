@@ -32,12 +32,11 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
-    return [NSObject instanceMethodSignatureForSelector:@selector(aaa)];
+    return [NSObject instanceMethodSignatureForSelector:@selector(init)];
 }
 
-- (void)aaa {
-    
-}
+
+
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     return [_target respondsToSelector:aSelector];
