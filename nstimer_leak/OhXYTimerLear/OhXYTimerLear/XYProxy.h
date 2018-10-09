@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface XYProxy : NSProxy
+#import "ViewController1.h"
+@interface XYProxy :NSObject 
 - (instancetype)initWithTarget:(id)target;
+- (instancetype)initWithTarget1:(ViewController1 *)target;
 @end
