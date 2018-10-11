@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    XYProxy *proxy = [[XYProxy alloc]initWithTarget1:self];
+    XYProxy *proxy = [[XYProxy alloc]initWithTarget:self];
     [NSTimer scheduledTimerWithTimeInterval:1 target:proxy selector:@selector(tick) userInfo:nil repeats:true];
 }
 

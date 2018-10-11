@@ -10,5 +10,5 @@
 #import "ViewController1.h"
 @interface XYProxy :NSObject 
 - (instancetype)initWithTarget:(id)target;
-- (instancetype)initWithTarget1:(ViewController1 *)target;
+
 @end

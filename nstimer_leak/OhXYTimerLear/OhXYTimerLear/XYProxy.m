@@ -9,8 +9,7 @@
 #import "XYProxy.h"
 #import "ViewController1.h"
 @implementation XYProxy {
-//    __weak id _target;
-    __weak ViewController1 *_vc1;
+    __weak id _target;
 }
 
 
@@ -23,33 +22,20 @@
     return [[XYProxy alloc] initWithTarget:target];
 }
 
-- (instancetype)initWithTarget1:(ViewController1 *)target {
-    _vc1 = target;
-    return self;
+
+- (id)forwardingTargetForSelector:(SEL)selector {
+    return _target;
 }
 
-
-- (void)tick {
-    if (_vc1 != nil) {
-        [_vc1 tick];
-    } else {
-        NSLog(@"oh my tick!");
-    }
+- (void)forwardInvocation:(NSInvocation *)invocation {
+    void *null = NULL;
+    [invocation setReturnValue:&null];
 }
 
-//- (id)forwardingTargetForSelector:(SEL)selector {
-//    return _target;
-//}
-//
-//- (void)forwardInvocation:(NSInvocation *)invocation {
-//    void *null = NULL;
-//    [invocation setReturnValue:&null];
-//}
-//
-//- (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
-//    return [NSObject instanceMethodSignatureForSelector:@selector(init)];
-//}
-//
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
+    return [NSObject instanceMethodSignatureForSelector:@selector(init)];
+}
+
 //- (BOOL)respondsToSelector:(SEL)aSelector {
 //    return [_target respondsToSelector:aSelector];
 //}
@@ -93,7 +79,7 @@
 //- (NSString *)debugDescription {
 //    return [_target debugDescription];
 //}
-
+//
 
 
 @end
