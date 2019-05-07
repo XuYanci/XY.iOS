@@ -1,5 +1,3 @@
-# SystemLearniOS
-System learning iOS
+# XY.iOS 
 
-1. GCD
-2. Runtime
+Exercise iOS 

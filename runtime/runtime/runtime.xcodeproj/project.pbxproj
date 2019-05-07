@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD3B0C1E228137FE0078D1FA /* NSObject+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3B0C1D228137FE0078D1FA /* NSObject+AssociatedObject.m */; };
 		AD75CE3A20C5452500C4D9E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75CE3920C5452500C4D9E9 /* AppDelegate.m */; };
 		AD75CE3D20C5452500C4D9E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75CE3C20C5452500C4D9E9 /* ViewController.m */; };
 		AD75CE4020C5452500C4D9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD75CE3E20C5452500C4D9E9 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD3B0C1C228137FE0078D1FA /* NSObject+AssociatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObject.h"; sourceTree = "<group>"; };
+		AD3B0C1D228137FE0078D1FA /* NSObject+AssociatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObject.m"; sourceTree = "<group>"; };
 		AD75CE3520C5452500C4D9E9 /* runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD75CE3820C5452500C4D9E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD75CE3920C5452500C4D9E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				AD75CE4320C5452500C4D9E9 /* LaunchScreen.storyboard */,
 				AD75CE4620C5452500C4D9E9 /* Info.plist */,
 				AD75CE4720C5452500C4D9E9 /* main.m */,
+				AD3B0C1C228137FE0078D1FA /* NSObject+AssociatedObject.h */,
+				AD3B0C1D228137FE0078D1FA /* NSObject+AssociatedObject.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3B0C1E228137FE0078D1FA /* NSObject+AssociatedObject.m in Sources */,
 				AD75CE3D20C5452500C4D9E9 /* ViewController.m in Sources */,
 				AD75CE4820C5452500C4D9E9 /* main.m in Sources */,
 				AD75CE3A20C5452500C4D9E9 /* AppDelegate.m in Sources */,
