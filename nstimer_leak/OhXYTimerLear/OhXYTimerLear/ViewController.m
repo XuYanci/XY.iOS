@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+ 
 }
 
 
@@ -26,8 +27,23 @@
 }
 
 - (IBAction)push {
-    ViewController1 *vc1 = [[ViewController1 alloc]init];
-    [self.navigationController pushViewController:vc1 animated:true];
+//    ViewController1 *vc1 = [[ViewController1 alloc]init];
+//    [self.navigationController pushViewController:vc1 animated:true];
+    
+    NSMethodSignature *sig = [NSObject instanceMethodSignatureForSelector:@selector(init)];
+    NSLog(@"numberOfArguments %d", [sig numberOfArguments]);
+    NSLog(@"methodReturnLength %d", [sig methodReturnLength]);
+    NSInvocation *ivc = [NSInvocation invocationWithMethodSignature:sig];
+    [ivc setTarget:self];
+    [ivc setSelector:@selector(start2)];
+    [ivc invoke];
 }
 
+- (void)start3 {
+    NSLog(@"start3");
+}
+
+- (void)start2 {
+    NSLog(@"start3");
+}
 @end

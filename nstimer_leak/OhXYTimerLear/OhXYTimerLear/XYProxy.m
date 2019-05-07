@@ -35,9 +35,6 @@
     return [NSObject instanceMethodSignatureForSelector:@selector(init)];
 }
 
-
-
-
 - (BOOL)respondsToSelector:(SEL)aSelector {
     return [_target respondsToSelector:aSelector];
 }
