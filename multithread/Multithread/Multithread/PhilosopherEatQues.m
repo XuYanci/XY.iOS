@@ -9,5 +9,7 @@
 #import "PhilosopherEatQues.h"
 
 @implementation PhilosopherEatQues
-
+- (void)run {
+    
+}
 @end

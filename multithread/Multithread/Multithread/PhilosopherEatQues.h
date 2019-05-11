@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 哲学家就餐问题
 @interface PhilosopherEatQues : NSObject
-
+- (void)run;
 @end
 
 NS_ASSUME_NONNULL_END

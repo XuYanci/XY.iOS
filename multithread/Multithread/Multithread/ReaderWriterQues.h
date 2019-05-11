@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 读者写者问题
 @interface ReaderWriterQues : NSObject
-
+- (void)run;
 @end
 
 NS_ASSUME_NONNULL_END

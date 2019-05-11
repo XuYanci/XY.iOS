@@ -10,4 +10,18 @@
 
 @implementation ProducerComsumerQues
 
+
+-(instancetype)init {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+
+- (void)run {
+    
+}
+
+
+
 @end

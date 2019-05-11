@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 生产者-消费者问题
 @interface ProducerComsumerQues : NSObject
-
+- (void)run;
 @end
 
 NS_ASSUME_NONNULL_END

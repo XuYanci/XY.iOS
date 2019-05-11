@@ -34,6 +34,7 @@
 		ADEAFF052286C1B200A5D64A /* ReaderWriterQues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderWriterQues.m; sourceTree = "<group>"; };
 		ADEAFF072286C1CE00A5D64A /* PhilosopherEatQues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhilosopherEatQues.h; sourceTree = "<group>"; };
 		ADEAFF082286C1CE00A5D64A /* PhilosopherEatQues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhilosopherEatQues.m; sourceTree = "<group>"; };
+		ADEAFF0A2286C25500A5D64A /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				ADEAFF052286C1B200A5D64A /* ReaderWriterQues.m */,
 				ADEAFF072286C1CE00A5D64A /* PhilosopherEatQues.h */,
 				ADEAFF082286C1CE00A5D64A /* PhilosopherEatQues.m */,
+				ADEAFF0A2286C25500A5D64A /* README */,
 			);
 			path = Multithread;
 			sourceTree = "<group>";

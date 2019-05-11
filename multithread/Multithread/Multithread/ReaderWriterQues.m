@@ -9,5 +9,7 @@
 #import "ReaderWriterQues.h"
 
 @implementation ReaderWriterQues
-
+- (void)run {
+    
+}
 @end
