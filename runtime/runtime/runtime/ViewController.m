@@ -21,22 +21,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    
-    NSArray *object = @[@"hello",@"goodbye"];
-    object_setIvar(object, class_copyIvarList(object.class,NULL)[1], @"byebye");
-    
-    unsigned int count;
-    Ivar *ivars = class_copyIvarList([object class], &count);
-    
-    for(int i = 0; i <count;i++) {
-        Ivar ivar = ivars[i];
-        const char *ivarType = ivar_getTypeEncoding(ivar);
-        const char *ivarName = ivar_getName(ivar);
-        ptrdiff_t offset = ivar_getOffset(ivar);
-        NSLog(@"实例变量名为：%s 字符串类型为：%s", ivarName, ivarType);
-    }
-    free(ivars);
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,7 +59,7 @@
 //
 //- (void)forwardInvocation:(NSInvocation *)anInvocation {
 //
-}
+//}
 
 
 @end
