@@ -8,16 +8,28 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
-@interface A : NSObject
+
+@protocol AAA <NSObject>
+
+/// @protocol里面声明的变量不会自动合成,没有ivar,getter and setter
+@property (nonatomic,assign) int val;
+
+@end
+
+@interface A : NSObject<AAA>
 
 @end
 
 @implementation A
 
+/// 需要声明自动合成
+/// :( 一直以为这个是强调的意思
+@synthesize val;
+
 @end
 
 @interface A(Cat)
-@property (nonatomic,assign)id associatedObject;
+@property (nonatomic,strong)id associatedObject;
 @end
 
 @implementation A(Cat)
@@ -43,5 +55,6 @@ int main(int argc, const char * argv[]) {
     
     A *a = [[A alloc]init];
     a.associatedObject = [[NSObject alloc]init];
+    a.val = 100;
     return 0;
 }
