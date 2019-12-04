@@ -32,6 +32,7 @@ int main(int argc, const char * argv[]) {
         *ptr1 = "GoodBye";
         NSLog(@"%@",array);
         
+        
        
     }
     return 0;
