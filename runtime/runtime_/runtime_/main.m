@@ -11,7 +11,7 @@
 
 /// Refer:
 // https://juejin.im/post/5ac81c75518825556534c0af
-
+// https://juejin.im/post/5c8230916fb9a049bb7d20d9
 /// because NSObject's isa use 8 bytes , byte alignment, so 8 + 4 = 12 => 16
 @interface Person : NSObject<NSCopying>
 {
@@ -76,6 +76,99 @@ struct xx_cc_objc_class{
     Class isa;
 };
 
+@interface Dog : NSObject
+{
+    int age;         //4个字节
+    BOOL sex;        //1个字节
+    NSString* name;  //8个字节的指针地址
+    short lifeTime;      //2个字节
+    NSString* style;    //8个字节的指针地址
+}
+
+@end
+
+@implementation Dog
+
+
+@end
+
+@interface Cat : NSObject
+{
+    NSString* c1;
+    NSString* c4;
+}
+
+@property(nonatomic, copy)NSString* c2;
+@property(nonatomic, copy)NSString* c3;
+@end
+
+@implementation Cat
+
+@end
+
+@interface Person1 : NSObject
+{
+    int int1;
+    bool bool1;
+    __strong NSString* strong1;
+    __weak NSString* weak1;
+    char char1;
+    __weak NSString* weak2;
+    __strong NSString* strong2;
+    __strong NSString* strong3;
+    char char2;
+    __weak NSString* weak3;
+    char char3;
+    int  int2;
+    __weak NSString* weak4;
+    __weak NSString* weak5;
+}
+
+@end
+
+@implementation Person1
+
+
+@end
+void getOffset() {
+    unsigned int count;
+    Ivar* ivars =class_copyIvarList(objc_getClass("Person1"), &count);
+    for (unsigned int i = 0; i < count; i++) {
+        Ivar ivar = ivars[i];
+        ptrdiff_t offset = ivar_getOffset(ivar);
+        NSLog(@"%s = %td",ivar_getName(ivar),offset);
+    }
+    free(ivars);
+    NSLog(@"Person总字节 = %lu",class_getInstanceSize(objc_getClass("Person1")));
+}
+
+void getIvarLayout() {
+    const uint8_t *strongLayout =   class_getIvarLayout(objc_getClass("Person1"));
+    if (!strongLayout) {
+        return;
+    }
+    uint8_t byte;
+    while ((byte = *strongLayout++)) {
+        //取出byte的左边一位(代表无效值需要跳过)
+        unsigned skips = (byte >> 4);
+        //取出byte的右边一位(代表变量数量)
+        unsigned scans = (byte & 0x0F);
+        printf("strongLayout = #%02x\n",byte);
+    }
+    
+    const uint8_t *weakLayout =   class_getWeakIvarLayout(objc_getClass("Person1"));
+    if (!weakLayout) {
+        return;
+    }
+    while ((byte = *weakLayout++)) {
+        //取出byte的左边一位 (代表无效值需要跳过)
+        unsigned skips = (byte >> 4);
+        //取出byte的右边一位 (代表变量数量)
+        unsigned scans = (byte & 0x0F);
+        printf("weakLayout = #%02x\n",byte);
+    }
+}
+
 
 int main(int argc, const char * argv[]) {
     
@@ -115,7 +208,7 @@ int main(int argc, const char * argv[]) {
     Class objectClass4 = object_getClass(object1);
     Class objectClass5 = object_getClass(object2);
     NSLog(@"%p %p %p %p %p", objectClass1, objectClass2, objectClass3, objectClass4, objectClass5);
-   
+    
     
     //runtime中传入类对象此时得到的就是元类对象
     Class objectMetaClass = object_getClass([NSObject class]);
@@ -125,17 +218,44 @@ int main(int argc, const char * argv[]) {
     class_isMetaClass(objectMetaClass); // 判断该对象是否为元类对象
     NSLog(@"%p %p %p", objectMetaClass, objectClass3, cls); // 后面两个地址相同，说明多次调用class得到的还是类对象
     
-
+    
     NSObject *object = [[NSObject alloc] init];
     /// objectClass address = object->isa & ISA_MASK
     Class objectClass = [NSObject class];
     objectMetaClass = object_getClass([NSObject class]);
     
     NSLog(@"%p %p %p", object, objectClass, objectMetaClass);
-   
+    
     /// objectMetaClass address = objectClass->isa & ISA_MASK
     struct xx_cc_objc_class *objectClass2_ = (__bridge struct xx_cc_objc_class *)(objectClass);
-   
     
+    
+    /// Dog
+    //    Class class = objc_getClass("Dog");
+    //    NSLog(@"内存地址：%p",class);
+    //    unsigned int count;
+    //    Ivar* ivars = class_copyIvarList(objc_getClass("Dog"), &count);
+    //    for (unsigned int i = 0; i < count; i++) {
+    //        Ivar ivar = ivars[i];
+    //        ptrdiff_t offset = ivar_getOffset(ivar);
+    //        NSLog(@"%s = %td",ivar_getName(ivar),offset);
+    //    }
+    //    free(ivars);
+    //    NSLog(@"Dog总字节 = %lu",class_getInstanceSize(objc_getClass("Dog")));
+    
+    /// Cat
+    
+    unsigned int count;
+    Ivar* ivars =class_copyIvarList(objc_getClass("Cat"), &count);
+    for (unsigned int i = 0; i < count; i++) {
+        Ivar ivar = ivars[i];
+        ptrdiff_t offset = ivar_getOffset(ivar);
+        NSLog(@"%s = %td",ivar_getName(ivar),offset);
+    }
+    free(ivars);
+    NSLog(@"Cat总字节 = %lu",class_getInstanceSize(objc_getClass("Cat")));
+    
+    getIvarLayout();
+    getOffset();
     return 0;
 }
