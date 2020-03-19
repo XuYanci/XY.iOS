@@ -772,6 +772,7 @@
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
 				UNEXPORTED_SYMBOLS_FILE = unexported_symbols;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -846,6 +847,7 @@
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
 				UNEXPORTED_SYMBOLS_FILE = unexported_symbols;
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"$(inherited)",
 					"-Wglobal-constructors",
@@ -947,6 +949,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GAB85EFG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -956,6 +959,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GAB85EFG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -963,6 +967,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -970,6 +975,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -1008,6 +1014,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -1043,6 +1050,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
