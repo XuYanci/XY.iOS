@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		861C401B2730399000C5FFE3 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 861C40122730398F00C5FFE3 /* 5.jpeg */; };
+		861C401C2730399000C5FFE3 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 861C40132730398F00C5FFE3 /* 1.jpeg */; };
+		861C401D2730399000C5FFE3 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 861C40142730398F00C5FFE3 /* 4.jpeg */; };
+		861C401F2730399000C5FFE3 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 861C40162730398F00C5FFE3 /* 3.jpeg */; };
+		861C40222730399000C5FFE3 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 861C40192730398F00C5FFE3 /* 2.jpeg */; };
 		ADA79F082285DC0300546F5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA79F072285DC0300546F5D /* AppDelegate.m */; };
 		ADA79F0B2285DC0300546F5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA79F0A2285DC0300546F5D /* ViewController.m */; };
 		ADA79F0E2285DC0300546F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F0C2285DC0300546F5D /* Main.storyboard */; };
@@ -25,19 +30,14 @@
 		ADA79F472285E07100546F5D /* BatmanButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F282285E07100546F5D /* BatmanButton.png */; };
 		ADA79F482285E07100546F5D /* backView.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F292285E07100546F5D /* backView.png */; };
 		ADA79F492285E07100546F5D /* new_note_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F2A2285E07100546F5D /* new_note_icon.png */; };
-		ADA79F4A2285E07100546F5D /* batman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F2B2285E07100546F5D /* batman@2x.png */; };
-		ADA79F4B2285E07100546F5D /* pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F2C2285E07100546F5D /* pin@2x.png */; };
 		ADA79F4C2285E07100546F5D /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F2D2285E07100546F5D /* pattern.png */; };
 		ADA79F4D2285E07100546F5D /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F2E2285E07100546F5D /* arrow-down.png */; };
-		ADA79F4E2285E07100546F5D /* tach@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F2F2285E07100546F5D /* tach@2x.png */; };
 		ADA79F4F2285E07100546F5D /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F302285E07100546F5D /* heart.png */; };
 		ADA79F502285E07100546F5D /* obama.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F312285E07100546F5D /* obama.png */; };
-		ADA79F512285E07100546F5D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F322285E07100546F5D /* Default-568h@2x.png */; };
 		ADA79F522285E07100546F5D /* mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F332285E07100546F5D /* mountains.png */; };
 		ADA79F532285E07100546F5D /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F342285E07100546F5D /* arrow-left.png */; };
 		ADA79F542285E07100546F5D /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F352285E07100546F5D /* arrow-up.png */; };
 		ADA79F552285E07100546F5D /* tach.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F362285E07100546F5D /* tach.png */; };
-		ADA79F562285E07100546F5D /* BatmanButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F372285E07100546F5D /* BatmanButton@2x.png */; };
 		ADA79F572285E07100546F5D /* BobMcCune.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F382285E07100546F5D /* BobMcCune.png */; };
 		ADA79F582285E07100546F5D /* corkboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F392285E07100546F5D /* corkboard.png */; };
 		ADA79F592285E07100546F5D /* cyborg.m4v in Resources */ = {isa = PBXBuildFile; fileRef = ADA79F3B2285E07100546F5D /* cyborg.m4v */; };
@@ -45,6 +45,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		861C40122730398F00C5FFE3 /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		861C40132730398F00C5FFE3 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		861C40142730398F00C5FFE3 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		861C40162730398F00C5FFE3 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		861C40192730398F00C5FFE3 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		ADA79F032285DC0300546F5D /* RenderGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA79F062285DC0300546F5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADA79F072285DC0300546F5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,19 +72,14 @@
 		ADA79F282285E07100546F5D /* BatmanButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BatmanButton.png; sourceTree = "<group>"; };
 		ADA79F292285E07100546F5D /* backView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backView.png; sourceTree = "<group>"; };
 		ADA79F2A2285E07100546F5D /* new_note_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_note_icon.png; sourceTree = "<group>"; };
-		ADA79F2B2285E07100546F5D /* batman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batman@2x.png"; sourceTree = "<group>"; };
-		ADA79F2C2285E07100546F5D /* pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin@2x.png"; sourceTree = "<group>"; };
 		ADA79F2D2285E07100546F5D /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
 		ADA79F2E2285E07100546F5D /* arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-down.png"; sourceTree = "<group>"; };
-		ADA79F2F2285E07100546F5D /* tach@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tach@2x.png"; sourceTree = "<group>"; };
 		ADA79F302285E07100546F5D /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		ADA79F312285E07100546F5D /* obama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obama.png; sourceTree = "<group>"; };
-		ADA79F322285E07100546F5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ADA79F332285E07100546F5D /* mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountains.png; sourceTree = "<group>"; };
 		ADA79F342285E07100546F5D /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
 		ADA79F352285E07100546F5D /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-up.png"; sourceTree = "<group>"; };
 		ADA79F362285E07100546F5D /* tach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tach.png; sourceTree = "<group>"; };
-		ADA79F372285E07100546F5D /* BatmanButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BatmanButton@2x.png"; sourceTree = "<group>"; };
 		ADA79F382285E07100546F5D /* BobMcCune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BobMcCune.png; sourceTree = "<group>"; };
 		ADA79F392285E07100546F5D /* corkboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corkboard.png; sourceTree = "<group>"; };
 		ADA79F3B2285E07100546F5D /* cyborg.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = cyborg.m4v; sourceTree = "<group>"; };
@@ -156,6 +156,11 @@
 		ADA79F232285E07100546F5D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				861C40132730398F00C5FFE3 /* 1.jpeg */,
+				861C40192730398F00C5FFE3 /* 2.jpeg */,
+				861C40162730398F00C5FFE3 /* 3.jpeg */,
+				861C40142730398F00C5FFE3 /* 4.jpeg */,
+				861C40122730398F00C5FFE3 /* 5.jpeg */,
 				ADA79F242285E07100546F5D /* batman.png */,
 				ADA79F252285E07100546F5D /* pin.png */,
 				ADA79F262285E07100546F5D /* arrow-right.png */,
@@ -163,19 +168,14 @@
 				ADA79F282285E07100546F5D /* BatmanButton.png */,
 				ADA79F292285E07100546F5D /* backView.png */,
 				ADA79F2A2285E07100546F5D /* new_note_icon.png */,
-				ADA79F2B2285E07100546F5D /* batman@2x.png */,
-				ADA79F2C2285E07100546F5D /* pin@2x.png */,
 				ADA79F2D2285E07100546F5D /* pattern.png */,
 				ADA79F2E2285E07100546F5D /* arrow-down.png */,
-				ADA79F2F2285E07100546F5D /* tach@2x.png */,
 				ADA79F302285E07100546F5D /* heart.png */,
 				ADA79F312285E07100546F5D /* obama.png */,
-				ADA79F322285E07100546F5D /* Default-568h@2x.png */,
 				ADA79F332285E07100546F5D /* mountains.png */,
 				ADA79F342285E07100546F5D /* arrow-left.png */,
 				ADA79F352285E07100546F5D /* arrow-up.png */,
 				ADA79F362285E07100546F5D /* tach.png */,
-				ADA79F372285E07100546F5D /* BatmanButton@2x.png */,
 				ADA79F382285E07100546F5D /* BobMcCune.png */,
 				ADA79F392285E07100546F5D /* corkboard.png */,
 			);
@@ -272,21 +272,21 @@
 				ADA79F4C2285E07100546F5D /* pattern.png in Resources */,
 				ADA79F482285E07100546F5D /* backView.png in Resources */,
 				ADA79F132285DC0400546F5D /* LaunchScreen.storyboard in Resources */,
-				ADA79F4E2285E07100546F5D /* tach@2x.png in Resources */,
 				ADA79F522285E07100546F5D /* mountains.png in Resources */,
+				861C40222730399000C5FFE3 /* 2.jpeg in Resources */,
 				ADA79F402285E07100546F5D /* RootViewController.xib in Resources */,
 				ADA79F102285DC0400546F5D /* Assets.xcassets in Resources */,
 				ADA79F502285E07100546F5D /* obama.png in Resources */,
-				ADA79F512285E07100546F5D /* Default-568h@2x.png in Resources */,
+				861C401C2730399000C5FFE3 /* 1.jpeg in Resources */,
 				ADA79F0E2285DC0300546F5D /* Main.storyboard in Resources */,
+				861C401D2730399000C5FFE3 /* 4.jpeg in Resources */,
 				ADA79F5A2285E07100546F5D /* engine.caf in Resources */,
-				ADA79F4B2285E07100546F5D /* pin@2x.png in Resources */,
+				861C401F2730399000C5FFE3 /* 3.jpeg in Resources */,
 				ADA79F542285E07100546F5D /* arrow-up.png in Resources */,
 				ADA79F582285E07100546F5D /* corkboard.png in Resources */,
-				ADA79F4A2285E07100546F5D /* batman@2x.png in Resources */,
+				861C401B2730399000C5FFE3 /* 5.jpeg in Resources */,
 				ADA79F422285E07100546F5D /* LayerView.xib in Resources */,
 				ADA79F3F2285E07100546F5D /* CoreAnimationView.xib in Resources */,
-				ADA79F562285E07100546F5D /* BatmanButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,16 +441,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YTA3WJD8SA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VAKNDL2M79;
 				INFOPLIST_FILE = RenderGraph/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.RenderGraph;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aeonbuy.app.aeonclient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = aeonbuydev20210709;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,16 +460,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YTA3WJD8SA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VAKNDL2M79;
 				INFOPLIST_FILE = RenderGraph/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = demo.RenderGraph;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aeonbuy.app.aeonclient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = aeonbuydev20210709;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
